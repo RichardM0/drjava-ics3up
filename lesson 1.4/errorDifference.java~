@@ -1,0 +1,12 @@
+public class errorDifference{
+  public static void main(String[] args) {
+    System.out.printline("Hello Java!");
+    // this is a syntax error because instead of println, I used printline.
+    
+    // a logical error is an error done by the programmer, who outputs the incorrect output.
+    // this code wants to print numbers 1 through 6
+    for(int i=1;i<6;i++){
+      System.out.println(i);
+    }
+    
+    // instead, this prints 0 through 5.
