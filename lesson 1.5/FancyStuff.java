@@ -26,18 +26,18 @@ public class FancyStuff {
 //           The second is slightly indented due %9, and then rounded to 3 decimals because of .3f.
 //           The third rounds to two decimal places because of %1.2f.
 
-// With ints, in %12s, 3 whitespaces are added which is found by 12/3 - 1.
+// In %12s, 3 whitespaces are added which is found by 12/3 - 1.
 // We can see this in %9s, when 2 whitespaces are added which is also found by 9/3 - 1.
 
 //RESULTS
-// Result is:     Welcome to Java.
+// Result is:    Welcome to Java.
 // Result is: Welcome to    Java
 // Result is: Welcome to Java
 // Result is: Wel Java
-// Result is:  7
+// Result is:   7
 //           7
 //           007
 
 // Result is: 123.945
-//               123.945
+//              123.945
 //            123.95
