@@ -13,8 +13,9 @@ public class UserInput3Advanced {
         // Read age as a String, but convert it to an int
         age = Integer.parseInt( JOptionPane.showInputDialog( "How old are you: " ) );
         
-        System.out.print( "Well, " + name);
-        System.out.println( ", you are " + age + " years old." );
+        JOptionPane.showMessageDialog( "Well, " + name);
+        JOptionPane.showMessageDialog( ", you are " + age + " years old." );
+        // Instead of System.out.println, use JOptionPane.showMessageDialog to display onto screen instead of Java console/compiler output.
   }  
 }
 
