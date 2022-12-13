@@ -20,10 +20,10 @@ public class funWithStrings{
         for(int i=0;i<str.length();i++){
             if(!(Character.isLetter(str.charAt(i)))){
                 return false;
-            }
-            }
-            return true;
+            }   
         }
+            return true;
+    }
 
  	
     // Takes a char and String parameter and counts and returns the number
