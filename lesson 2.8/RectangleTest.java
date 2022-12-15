@@ -1,20 +1,21 @@
-public class RectangleTest {
+public class RectangleTest{
     public static void main(String[] args){
-      
-        Rectangle a = new Rectangle();
+        Rectangle a = new Rectangle(-4, -3, -2, -1, true);
         System.out.println(a);
-        System.out.println(a.getNumRectangles());
+        System.out.println(a.getFilled());
+        a.setFilled(false);
+        System.out.println(a.getFilled());
+        a.setX1(40);
+        System.out.println(a.getX1());
 
-        Rectangle b = new Rectangle(-4, -3, -2, -1, false);
-        System.out.println(b);
-        System.out.println(b.getNumRectangles());
+        a.setX2(-5);
+        System.out.println(a.getX2());
 
-        Rectangle c = new Rectangle(1,2,3,4,true);
-        System.out.println(c);
-        System.out.println(c.getNumRectangles());
-        System.out.println(c.getUpperLeftX() + " " + c.getUpperLeftY());
-        System.out.println("Width: " + c.getWidth() + " Length: " + c.getLength());
-        System.out.println(c.calcArea());
+        a.setY1(0);
+        System.out.println(a.getY1());
 
+        a.setY2(5);
+        System.out.println(a.getY2());
     }
+
 }
