@@ -39,7 +39,47 @@ public class Rectangle
         this.filled=filled;
         numRectangles++;
     }
-    
+    public void setX1(int newX1){
+        if(newX1<0){
+            System.err.println("Coordinate: " + newX1 + " is less than 0 (negative), set to default: 0");
+            newX1 = 0;
+        }
+        x1 = newX1;
+    }
+    public void setX2(int newX2){
+        if(newX2<0){
+            System.err.println("Coordinate: " + newX2 + " is less than 0 (negative), set to default: 0");
+            newX2 = 0;
+        }
+        x2 = newX2;
+    }
+    public void setY1(int newY1){
+        if(newY1<0){
+            System.err.println("Coordinate: " + newY1 + " is less than 0 (negative), set to default: 0");
+            newY1 = 0;
+        }
+        y1 = newY1;
+    }
+    public void setY2(int newY2){
+        if(newY2<0){
+            System.err.println("Coordinate: " + newY2 + " is less than 0 (negative), set to default: 0");
+            newY2 = 0;
+        }
+        y2 = newY2;
+    }
+
+    public int getX1(){
+        return x1;
+    }
+    public int getX2(){
+        return x2;
+    }
+    public int getY1(){
+        return y1;
+    }
+    public int getY2(){
+        return y2;
+    }
     public int getNumRectangles(){
       return numRectangles;
     }
@@ -54,6 +94,15 @@ public class Rectangle
       
       
     }
+    public boolean getFilled(){
+        return filled;
+    }
+    
+    public void setFilled(boolean isFilled){
+        filled=isFilled;
+    }
+    
+        
     public int getUpperLeftY(){
       if(y1<y2){
         return y1;
@@ -76,8 +125,6 @@ public class Rectangle
     public double calcArea(){
       return (double)(getLength())*(double)(getWidth());
     }
-    
-    
     
     public String toString(){
         return "first coordinate: " + "("+x1+", "+y1+")" +"\n"+"second coordinate: "+ "("+x2+", "+y2+")";
