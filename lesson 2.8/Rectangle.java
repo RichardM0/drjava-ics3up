@@ -6,7 +6,7 @@ public class Rectangle
     private int y1;
     private int y2;
     private boolean filled;
-    private static int numRectangles = 1;
+    private static int numRectangles = 0;
 
     public Rectangle(){
         x1 = 0;
