@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class L25Q1 {
+public class turToPy {
     public static void main(String[] args) {
 
         try {
